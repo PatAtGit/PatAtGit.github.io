@@ -50,5 +50,61 @@
 
 body {
     margin: 0px;
+    position: relative;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.itemsWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.itemWrapper{
+    position: relative;
+}
+
+.img-bg{
+    height: 350px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgTextWrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.itemHeader{
+    text-transform: lowercase;
+}
+
+.imgTextWrapper .itemText{
+    transition: 1s; 
+    font-weight: 400;
+    color:transparent;
+}
+
+.imgTextWrapper:hover .itemText{
+    font-weight: 400;
+    color: bisque;
+}
+
+.imgFadeOut{
+    transition: 1s;
+    filter: brightness(50%);
+}

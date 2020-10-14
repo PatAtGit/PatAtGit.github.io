@@ -18,16 +18,74 @@
                     <a href="index.html">Home</a>
                 </div>
                 <div class="navlinkWrapper">
-                    <a href="index.html"> Projects</a>
+                    <a href="Projects/Reaver.html"> Projects</a>
                 </div>
             </div>
-        <div>
+        </div>
     </div>
 
-    
+    <div class = "contentWrapper">
 
-    <div class = "test">
-     yo 
+        <div class="itemsWrapper">
+            <div class="itemWrapper">
+                <div class= "img-bg" style = "background-image:url(imgs/3.png)"></div>
+                <div class = "imgTextWrapper">
+                    <div class = "itemHeader">
+                        YO
+                    </div>
+                    <div class = "itemText">
+                        YOYOYOYO
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="itemWrapper">
+                <div class= "img-bg" style = "background-image:url(imgs/3.png)"></div>
+                <div class = "imgTextWrapper">
+                    <div class = "itemHeader">
+                        YO
+                    </div>
+                    <div class = "itemText">
+                        YOYOYOYO
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="itemWrapper">
+                <div class= "img-bg" style = "background-image:url(imgs/3.png)"></div>
+                <div class = "imgTextWrapper">
+                    <div class = "itemHeader">
+                        YO
+                    </div>
+                    <div class = "itemText">
+                        YOYOYOYO
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
+
 </body>
+
+<script>
+    const items = document.querySelectorAll('.itemWrapper');
+
+    items.forEach(item =>
+    {
+        item.addEventListener('mouseover', () =>
+        {
+            item.childNodes[1].classList.add('imgFadeOut');
+        })
+
+        item.addEventListener('mouseout', () =>
+        {
+            item.childNodes[1].classList.remove('imgFadeOut');
+
+        })
+    })
+</script>
 </html>
