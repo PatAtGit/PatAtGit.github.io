@@ -4,6 +4,36 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    padding-top: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+
+}
+
+.contentWrapper{
+    padding: 40px;
+}
+
+.contentTitleWrapper{
+    padding: 20px;
+}
+
+.contentTitle{
+    color: bisque;
+    height: 25px;
+    border-bottom: 1px solid;
+}
+
+.box {
+    border-radius: 0.4%;
+    background: rgba(0, 0, 0, 0.185);
+    padding: 0%;
+    border: 1px solid rgba(0, 0, 0, 0.075);
+
+}
+
+.modal-content{
+    background-color: rgba(33, 33, 37, 0.753);
 }
 
 .navWrapper{
@@ -27,19 +57,19 @@
 }
 
 .navWrapper > .navLeft > div{
-    margin-right: 20px;
+    margin-left: 12px;
     font-size: 1em;
+    text-transform: uppercase;
 }
 
 .navlinkWrapper{
     height: 18px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
-
 }
 
 .navlinkWrapper a{ 
-    color: rgba(238, 232, 228, 0.774);
+    color: rgba(187, 166, 152, 0.548);
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -49,7 +79,7 @@
 }
 
 .navlinkWrapper a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(224, 220, 205);
 }
 
 body {
@@ -66,22 +96,29 @@ body {
 .itemsWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 1%;
 }
 
 .itemWrapper{
+    height: 350px;
+    width: auto;
     position: relative;
 }
 
 .img-bg{
-    height: 350px;
-    width: auto;
-    background-size: cover;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0%;
 }
 
 video {
     object-fit: cover;
+    border-radius: 0%;
+    
 }
 
 .vidWrapper{
