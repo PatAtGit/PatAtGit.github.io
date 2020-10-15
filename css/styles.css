@@ -76,6 +76,19 @@ body {
     background-repeat: no-repeat;
 }
 
+video {
+    object-fit: cover;
+}
+
+.vidWrapper{
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
 .imgTextWrapper{
     position: absolute;
     top: 0;
