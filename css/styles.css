@@ -48,13 +48,14 @@ ul li{
 #submenu{
     background-color: rgba(33, 33, 37, 0.753);
     display: none;
+    opacity: 1;
 }
 
 ul li:hover #submenu{
     display: block;
 }
 
-a{
+ul li{
     font-size: 1em;
     text-transform: uppercase;
     color: rgba(187, 166, 152, 0.548);
@@ -64,7 +65,38 @@ a{
     transition: border-bottom 0.5s;
 }
 
-a:hover{
+ul li:hover{
+    color: rgb(224, 220, 205);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+ul a li{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: rgba(187, 166, 152, 0.548);
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+#submenu:hover a{ 
+    color: rgb(224, 220, 205);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#submenu a{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: rgba(187, 166, 152, 0.548);
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+ul a:hover li{
     color: rgb(224, 220, 205);
     border-bottom: 1px solid rgb(255, 255, 255);
 }
