@@ -1,3 +1,74 @@
+nav{
+    display: flex;
+    background-color: rgba(33, 33, 37, 0.753);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-top: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    border-top: 1px solid rgba(0, 0, 0, 0.075);
+    list-style: none;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+nav .navTitle{
+    display: flex;
+    float: left;
+    font-size: x-large;
+    font-weight: 600px;
+    color: rgba(187, 166, 152, 0.548);
+    padding-left: 30px;
+    padding-top: 3px;
+}
+
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li{
+    
+    padding: 0px;
+    width: 200px;
+    height: 40px;
+    margin: 0px;
+    float: left;
+    z-index: 1;    
+    top: 0;
+    text-align: center;
+    list-style: none;
+    line-height: 40px;
+    opacity: .8;
+    
+}
+
+#submenu{
+    background-color: rgba(33, 33, 37, 0.753);
+    display: none;
+}
+
+ul li:hover #submenu{
+    display: block;
+}
+
+a{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: rgba(187, 166, 152, 0.548);
+    border-bottom: 1px solid transparent;
+    text-decoration: none;
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+a:hover{
+    color: rgb(224, 220, 205);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
 
 .navBar{
     background-color: rgba(33, 33, 37, 0.753);
