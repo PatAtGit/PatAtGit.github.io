@@ -175,30 +175,28 @@ footer a:hover{
     border-radius: 0.4%;
     background: rgba(0, 0, 0, 0.185);
     padding: 0%;
+    margin: 2%;
     border: 1px solid rgba(0, 0, 0, 0.075);
     
 }
 
-.sketchfabbox {
+.sketchfabbox, .rightBox {
     
     border-radius: 0.4%;
     background: rgba(0, 0, 0, 0.185);
     padding: 2%;
+    margin: 2%;
     border: 1px solid rgba(0, 0, 0, 0.075);
     height: 100%;
     width: 98%;
 }
-.timelineBox {
-    
-    border-radius: 0.4%;
-    background: rgba(0, 0, 0, 0.185);
-    padding: 2%;
-    margin-top: 2%;
-    border: 1px solid rgba(0, 0, 0, 0.075);
-    height: 100%;
-    width: 98%;
+
+.rightBox{
+    margin-left: 7%;
+    width: 87%;
 }
-.sketchfabbox p, .timelineBox p{
+
+.sketchfabbox p, .rightBox p{
     padding: 2%;
     height: 100%;
     width: 98%;
@@ -223,7 +221,7 @@ body {
 
 .itemsWrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 1%;
 }
 
@@ -293,40 +291,57 @@ video {
 }
 
 
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 4; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
   }
   
-  /* Modal Content/Box */
+
+
+  /* Modal Content (image) */
   .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
   }
   
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
   }
   
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
   }
