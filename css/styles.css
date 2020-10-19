@@ -191,17 +191,19 @@ footer a:hover{
     width: 98%;
 }
 
-.rightBox{
-    margin-left: 7%;
-    width: 87%;
+.rightBox{ 
+    padding: 0%;
+    margin-left: 2%;
+    width: 95%;
 }
 
 .sketchfabbox p, .rightBox p{
+    margin-top: 0%;
     padding: 2%;
-    height: 100%;
+    height: 98%;
     width: 98%;
     color: bisque;
-    font-size: x-large;
+    font-size: larger;
 }
 
 .modal-content{
