@@ -50,7 +50,7 @@ ul li{
 }
 
 #submenu{
-    background-color: rgba(33, 33, 37, 0.753);
+    background-color: rgba(33, 33, 37, 1);
     display: none;
     opacity: 1;
 }
@@ -85,11 +85,12 @@ ul li:hover{
 ul a li{
     font-size: 1em;
     text-transform: uppercase;
-    color: rgba(187, 166, 152, 0.548);
+    color: rgba(187, 166, 152, 0.748);
     border-bottom: 1px solid transparent;
     text-decoration: none;
     transition: color 0.5s;
     transition: border-bottom 0.5s;
+    
 }
 
 #submenu:hover a{ 
@@ -112,18 +113,6 @@ ul a:hover li{
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-
-.navBar{
-    background-color: rgba(33, 33, 37, 0.753);
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding-top: 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-    border-top: 1px solid rgba(0, 0, 0, 0.075);
-
-}
-
 footer{
     background-color: rgba(33, 33, 37, 0.753);
     position: fixed;
@@ -136,6 +125,8 @@ footer{
     justify-content: center;
     width: 100%;
     height: 45px;
+
+    
 }
 
 footer a{
@@ -216,9 +207,17 @@ footer a:hover{
     width: 98%;
     font-size: larger;
 }
+.contentTitle{
+    color: rgb(226, 208, 196);
+}
+.sketchfabbox p, .rightBox p, .inlinea{
+    color: rgba(219, 211, 204, 0.603);
+}
 
-.contentTitle, .sketchfabbox p, .rightBox p{
-    color: rgba(241, 240, 255, 0.548);
+
+
+ul a li, ul li{
+    color: rgba(207, 183, 167, 0.685);
 }
 
 .modal-content{
@@ -233,14 +232,9 @@ body {
     min-height: 100%;
     margin: 0 auto;
     position: relative;
+
     background: hsla(265, 53%, 29%, 1);
-
-    background: linear-gradient(0deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(265, 53%, 29%, 1) 0%, hsla(24, 93%, 73%, 1) 100%);
-
+    background: linear-gradient(0deg, rgb(121, 109, 101), rgba(99, 98, 98,1));
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
 
 }
@@ -254,6 +248,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1%;
+    
 }
 
 .itemWrapper{
