@@ -208,16 +208,16 @@ footer a:hover{
     font-size: larger;
 }
 .contentTitle, nav .navTitle{
-    color: #9C6A54;
+    color: #2a9599bd;
     font-family: Sans-serif;
 }
 .sketchfabbox p, .rightBox p, .inlinea{
-    color: #ffd5c2a6;
+    color: #d9b298a6;
     font-family: Sans-serif;
 }
 
 ul a li, ul li{
-    color: #9C6A54;
+    color: #D9958D;
     font-family: Sans-serif;
 }
 
@@ -234,8 +234,8 @@ body {
     margin: 0 auto;
     position: relative;
 
-    background: hsla(265, 53%, 29%, 1);
-    background: linear-gradient(0deg,#3B445F,#445A9C);
+    background: rgb(41, 41, 41);
+    background: linear-gradient(0deg,#1d1c1c,#1f4147);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#445A9C", endColorstr="#3B445F", GradientType=1 );
 
 }
