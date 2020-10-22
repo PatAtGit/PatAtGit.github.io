@@ -76,11 +76,6 @@ ul li{
     transition: border-bottom 0.5s;
 }
 
-ul li:hover{
-    color: rgb(224, 220, 205);
-    border-bottom: 1px solid rgb(255, 255, 255);
-}
-
 
 ul a li{
     font-size: 1em;
@@ -93,11 +88,6 @@ ul a li{
     
 }
 
-#submenu:hover a{ 
-    color: rgb(224, 220, 205);
-    border-bottom: 1px solid rgb(255, 255, 255);
-}
-
 #submenu a{
     font-size: 1em;
     text-transform: uppercase;
@@ -106,11 +96,6 @@ ul a li{
     text-decoration: none;
     transition: color 0.5s;
     transition: border-bottom 0.5s;
-}
-
-ul a:hover li{
-    color: rgb(224, 220, 205);
-    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 footer{
@@ -172,13 +157,10 @@ footer a:hover{
 }
 
 .sketchfabbox, .rightBox {
-    
-    border-radius: 0.4%;
-    background: rgba(0, 0, 0, 0.185);
+
     padding: 2%;
     margin: 2%;
     margin-top: 0%;
-    border: 1px solid rgba(0, 0, 0, 0.075);
     height: 100%;
     width: 98%;
     
@@ -208,17 +190,31 @@ footer a:hover{
     font-size: larger;
 }
 .contentTitle, nav .navTitle{
-    color: #2a9599bd;
+    color: #00fff277;
     font-family: Sans-serif;
+    font-weight: 400;
+    font-variant: small-caps;
 }
-.sketchfabbox p, .rightBox p, .inlinea{
-    color: #d9b298a6;
+.sketchfabbox p, .rightBox p, .inlinea,.imgTextWrapper:hover .itemText{
+    color: #e5d8c6a8;
     font-family: Sans-serif;
 }
 
 ul a li, ul li{
-    color: #D9958D;
+    color: #e5d8c6;
     font-family: Sans-serif;
+    
+}
+
+.box, .rightBox, .sketchfabbox{
+    background-color: #01050f23;
+    border: 1px solid #0000000c;
+    border-radius: .5em;
+}
+
+#submenu:hover a,ul a:hover li,ul li:hover{
+    color: rgb(255, 147, 59);
+    border-bottom: 1px solid rgb(255, 147, 59);
 }
 
 .modal-content{
@@ -235,8 +231,8 @@ body {
     position: relative;
 
     background: rgb(41, 41, 41);
-    background: linear-gradient(0deg,#1d1c1c,#1f4147);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#445A9C", endColorstr="#3B445F", GradientType=1 );
+    background: linear-gradient(0deg,#3b3947,#444655);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1d1c1c", endColorstr="#1f4147", GradientType=1 );
 
 }
 
@@ -309,7 +305,6 @@ video {
 
 .imgTextWrapper:hover .itemText{
     font-weight: 400;
-    color: rgba(187, 166, 152, 0.548);;
 }
 
 .imgFadeOut{
