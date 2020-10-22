@@ -88,40 +88,23 @@
 
             <div class="sketchfab-embed-wrapper">
                 <p>
-                    When I came across this video by Sebastian Lague I felt compelled to have a hand at procedurally animating a spider myself in UE4. 
+                    I was inspired to procedurally animate a spider when I saw a youtube video on the topic. 
 
-                    <br>I wanted to preserve the continuity and organic qualities of the spiders legs so I chose to implement them as splines with meshes deformed around them.
+                    <br><br>The legs are implemented using splines and then deforming a mesh around it.
 
-                    <br>More in depth Information on my implementation can be read via the video demonstrations above.
-               
-               <!--
-                    Legs are generated through a designer controlled interger slider and placed on the 
-                    circumphrence of the body within a set range that is considered safe for either the left or right of the body.
+                    <br> legs are generated via a slider which will equally distribute legs along a given range along the circumphrence of the spiders body and then the process is mirrored on the other side.
+                    
+                    <br><br> A single raycast fires under the body of the spider and lineirly interpolates its up vector to the hit normal, If nothing is hit then it orients to the upright position which allows the player to jump and fall landing upright.
+             
+                    <br><br> The feet have an ideal resting position based on the bodies orientation and when the world position of the foot gets too far away from the resting position then it will lerp to a new location within a range of specified degrees. 
+                    
+                    <br><br>Using a raycast that rotates along the spiders Z axis in the direction of the last known velocity, the body can orient and begin climbing a surface.
 
-                    A single raycast fires under the body of the spider and lineirly interpolates its up vector to the hit normal, If nothing is hit then it orients to the upright position which allows the player to jump and fall landing upright.
-
-                    The feet have an ideal resting position based on the bodies orientation and when the world position of the foot gets too far away from the resting position then it will lerp to a new location within a range of specified degrees. 
-
-                    Some current issues are that Legs do not lift when transitioning from their location to their destonation. Also the legs are unrealistic in that they are seemingly pulled by the body, rather than the opposite.
-                
-                
-                
-                
-                
-                
-        
-                    using a raycast that rotates along the spiders Z axis in the direction of the last known velocity, the body can orient and begin climbing a surface.
-
-                    Issues currently with orienting the player in certain positions as well as foot plasment mid transition between walls.
-                                    
-                
-                
-                -->
-                                
+                    <br><br>Some current issues are that Legs do not lift when transitioning from their location to their destonation. Also the legs are unrealistic in that they are seemingly pulled by the body, rather than the opposite.
+                    Camera orientation and foot plasment mid transition between walls also need to be adressed.
                 </p>
             </div>
         </div>
-
 
         <div class = "rightBox">
             <div class = "contentTitleWrapper">
