@@ -207,17 +207,18 @@ footer a:hover{
     width: 98%;
     font-size: larger;
 }
-.contentTitle{
-    color: rgb(226, 208, 196);
+.contentTitle, nav .navTitle{
+    color: #9C6A54;
+    font-family: Sans-serif;
 }
 .sketchfabbox p, .rightBox p, .inlinea{
-    color: rgba(219, 211, 204, 0.603);
+    color: #ffd5c2a6;
+    font-family: Sans-serif;
 }
 
-
-
 ul a li, ul li{
-    color: rgba(207, 183, 167, 0.685);
+    color: #9C6A54;
+    font-family: Sans-serif;
 }
 
 .modal-content{
@@ -234,8 +235,8 @@ body {
     position: relative;
 
     background: hsla(265, 53%, 29%, 1);
-    background: linear-gradient(0deg, rgb(121, 109, 101), rgba(99, 98, 98,1));
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
+    background: linear-gradient(0deg,#3B445F,#445A9C);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#445A9C", endColorstr="#3B445F", GradientType=1 );
 
 }
 
