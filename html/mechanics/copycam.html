@@ -87,6 +87,31 @@
             <div class="sketchfab-embed-wrapper">
                 <p>
                     TBA
+
+                    <!--
+                        I came across this Twitter post by Matt Stark and wanted to understand the effect from my own perspective. So I set out on recreating the effect inside unreal.
+
+                        More in depth Information on my implementation can be read via the video demonstrations above.
+
+
+
+                        The parent class exposes variables for a designer to manipulate such as if the object should calculate physics and the static mesh that should be rebuilt procedurally.
+
+                        The player rasies a photograph and a box trace is sent out to invisibly duplicate the hit objects and to then desaturate and cut them along the box's edges.
+
+                        When placing objects, a box trace is sent out to cut the enviornment and remove the chuncks that were within. Then the previously duplecated objects are unparented and unhidden.
+
+                        Current bug, the duplicate mesh does not apply texture scaling acording to its original.
+
+
+
+                        
+                        Expanding upon the current mechanic, I added a door child class which retains its functionality regardless of being cut up.
+
+                        support for rotating the duplacate objects along with the photographs rotation was added.
+
+
+                    -->
                 </p>
             </div>
         </div>
@@ -101,7 +126,7 @@
 
             <div class="sketchfab-embed-wrapper">
                 <p>  
-                    16 weeks
+                    30 hours over 6 days thus far.
                 </p>
             </div>
 
