@@ -192,9 +192,17 @@ footer a:hover{
 .contentTitle, nav .navTitle{
     color: #00fff277;
     font-family: Sans-serif;
-    font-weight: 400;
     font-variant: small-caps;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
+
+#subheading{
+    color: rgb(180, 172, 134);
+    letter-spacing: 2px;
+}
+
+
 .sketchfabbox p, .rightBox p, .inlinea,.imgTextWrapper:hover .itemText{
     color: #e5d8c6a8;
     font-family: Sans-serif;
