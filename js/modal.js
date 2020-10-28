@@ -19,8 +19,8 @@ imgs.forEach(img =>
 vids.forEach(video =>
   {
       video.onclick = function(){
-          modal.style.display = "block";
-          modalVidSRC.src = this.childNodes[1].src;
+        modal.style.display = "block";
+        modalVid.setAttribute("src",this.childNodes[1].src);
         }
   });
 
