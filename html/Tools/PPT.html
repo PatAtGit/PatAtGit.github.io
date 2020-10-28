@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset = "utf-8" />
-    <title>Personal Pipeline Tools</title>
+    <title>PPT</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -33,6 +33,7 @@
                     <a href="/html/main/props.html"><li id = submenu>Props</li></a>
                     <a href="/html/main/levels.html"><li id = submenu>Levels</li></a>
                     <a href="/html/main/mechanics.html"><li id = submenu>Mechanics</li></a>
+                    <a href="/html/main/tools.html"><li id = submenu>Tools</li></a>
                 </ul>
             </li>
 
@@ -54,23 +55,45 @@
             <div class="itemsWrapper">
 
                 <div class="itemWrapper">
-                    <img class= "img-bg"  src= /imgs/games/Reaver/1.webp style = "border-top-left-radius: 2%;">
+                    <div class= "vidWrapper">
+                        <video width="100%" height="100%" autoplay loop muted style = "border-top-left-radius: 2%;">
+                            <source src="/vids/PPT/UV.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
 
 
                 <div class="itemWrapper">
-                    <img class= "img-bg"  src= /imgs/games/Reaver/2.webp style = "border-top-right-radius: 2%;">
+                    <div class= "vidWrapper">
+                        <video width="100%" height="100%" autoplay loop muted style = "border-top-right-radius: 2%;">
+                            <source src="/vids/PPT/ID.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-
 
                 <div class="itemWrapper">
-                    <img class= "img-bg"  src= /imgs/games/Reaver/3.webp style = "border-bottom-left-radius: 2%;">
+                    <div class= "vidWrapper">
+                        <video width="100%" height="100%" autoplay loop muted style = "border-bottom-left-radius: 2%;">
+                            <source src="/vids/PPT/Cage.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-
 
                 <div class="itemWrapper">
-                    <img class= "img-bg"  src= /imgs/games/Reaver/4.webp style = "border-bottom-right-radius: 2%;">
+                    <div class= "vidWrapper">
+                        <video width="100%" height="100%" autoplay loop muted style = "border-bottom-right-radius: 2%;">
+                            <source src="/vids/PPT/HP.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
+
+
+
+
 
             </div>
         </div>
@@ -87,10 +110,31 @@
 
             <div class="sketchfab-embed-wrapper">
                 <p>
+                    I decided to make my own add-on to address repetitive tasks in my workflow, and as an excuse to finally attempt python.
 
+                    <br>Currently Personal Pipeline Tools, accomplishes the following while taking into account children within the collection of the currently select object,
+
+                    <br><br> &ThickSpace;&ThickSpace;&middot; Generate UV's
+                    <br> &ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot;Apply's seams and Sharp edges based on angle, Layout is 0-1UV
+                    <br> &ThickSpace;&ThickSpace;&middot; Generate ID's
+                    <br>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot;Materials are generated and applied taking into account previously generated colors.
+                    <br> &ThickSpace;&ThickSpace;&middot; Generate Cage's
+                    <br>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot; cages are made with a user defined float for cage thickness
+                    <br> &ThickSpace;&ThickSpace;&middot; Generate High Poly's
+                    <br>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot;Applies modifiers based on the user selected modifier stack. 
+                    <br> &ThickSpace;&ThickSpace;&middot; Finalize Low Poly's
+                    <br>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot; Joins the low poly mesh's into one and applies/freezes transform
+                    <br> &ThickSpace;&ThickSpace;&middot; Export FBX
+                    <br>&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&middot;exports fbx to the user specified path, (need to add user settings) * currently only supports ue4
+                
+                    <br><br>Additionally, users may choose an existing img for baking or generate a new one.
+                    bakes are recursive based on children in the collection, and automatically add required nodes to the material editor as well as find the high poly and cage required for certain maps.
+                    They are then exported to the user specified path.
                     <br>
-                    <br> &middot;  
-
+                    <br>Texture baking supports ID, Normal, Curvature, and Ambient Occlusion.
+                    
+                    <br>Users may also define both prefix and suffix options for each generated collection/texture.
+                
                 </p>
             </div>
         </div>
@@ -105,9 +149,7 @@
 
             <div class="sketchfab-embed-wrapper">
                 <p>  
-                    Total 45 hours 5 weeks
-                    <br><br>
-                    
+                    60 hours thus far.
                 </p>
             </div>
 
