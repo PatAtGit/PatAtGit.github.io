@@ -10,9 +10,13 @@
 <!-- The Modal -->
 <div class="modal">
     <div class=modalWrapper>
-        <img class="modal-content" id="displayimg">
+            <video id = displayVid class ="modal-content" width="100%" height="100%" autoplay loop muted style = "border-bottom-left-radius: 2%; border-top-left-radius: 2%; border-bottom-right-radius: 2%; border-top-right-radius: 2%;">
+                <source id="displaySRC" src = /vids/Copy_Cam/rot.mp4 type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
+                Your browser does not support the video tag.
+            </video>
     </div>
 </div>
+
 
 <nav>
     <div class="navTitle">Procedural IK</div>
@@ -56,7 +60,7 @@
 
                 <div class="itemWrapper">
                     <div class= "vidWrapper">
-                        <video width="100%" height="100%" autoplay loop muted style = "border-bottom-left-radius: 2%; border-top-left-radius: 2%;">
+                        <video class = "vid" width="100%" height="100%" autoplay loop muted style = "border-bottom-left-radius: 2%; border-top-left-radius: 2%;">
                             <source src="/vids/Procedural_IK_Splines/ikRot.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
                             Your browser does not support the video tag.
                         </video>
@@ -66,7 +70,7 @@
 
                 <div class="itemWrapper">
                     <div class= "vidWrapper">
-                        <video width="100%" height="100%" autoplay loop muted style = "border-bottom-right-radius: 2%; border-top-right-radius: 2%;">
+                        <video class = "vid" width="100%" height="100%" autoplay loop muted style = "border-bottom-right-radius: 2%; border-top-right-radius: 2%;">
                             <source src="/vids/Procedural_IK_Splines/transitions.mp4" type="video/mp4" codecs="avc1.42E01E,mp4a.40.2">
                             Your browser does not support the video tag.
                         </video>
