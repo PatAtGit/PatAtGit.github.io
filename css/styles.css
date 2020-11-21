@@ -190,7 +190,7 @@ footer a:hover{
     font-size: larger;
 }
 .contentTitle, nav .navTitle{
-    color: #00fff277;
+    color: #2b92bb;
     font-family: Sans-serif;
     font-variant: small-caps;
     font-weight: 600;
@@ -198,31 +198,47 @@ footer a:hover{
 }
 
 #subheading{
-    color: rgb(180, 172, 134);
+    color: #fffb00d0;
     letter-spacing: 2px;
 }
 
 
-.sketchfabbox p, .rightBox p, .inlinea,.imgTextWrapper:hover .itemText{
-    color: #e5d8c6a8;
+.sketchfabbox p, .rightBox p, .inlinea,.imgTextWrapper:hover .itemText, td{
+    color:#f0e6e2;
     font-family: Sans-serif;
+    letter-spacing: .07em;
+    font-weight: 0;
+    font-size: large;
+   
+}
+
+table, th, td {
+    border: none;
+    padding-left: 2%;
+    margin: 0;
+    column-width: 125px;
+}
+
+td{
+      padding-left: 10px;
+      padding-right: 10px;
 }
 
 ul a li, ul li{
-    color: #e5d8c6;
+    color: #f0e6e2;
     font-family: Sans-serif;
-    
+    letter-spacing: .07em;
 }
 
 .box, .rightBox, .sketchfabbox{
-    background-color: #01050f23;
-    border: 1px solid #0000000c;
-    border-radius: .5em;
+    background-color: #161a1f;
+    border: 1px solid #8b8b8b10;
+    
 }
 
 #submenu:hover a,ul a:hover li,ul li:hover{
-    color: rgb(255, 147, 59);
-    border-bottom: 1px solid rgb(255, 147, 59);
+    color: #38c7ff;
+    border-bottom: 1px solid #38c7ff;
 }
 
 .modal-content{
@@ -239,7 +255,7 @@ body {
     position: relative;
 
     background: rgb(41, 41, 41);
-    background: linear-gradient(0deg,#3b3947,#444655);
+    background: linear-gradient(0deg,#06070d,#06070d);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1d1c1c", endColorstr="#1f4147", GradientType=1 );
 
 }
